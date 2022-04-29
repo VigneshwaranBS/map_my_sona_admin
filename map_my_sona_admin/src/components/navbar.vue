@@ -51,12 +51,15 @@
       </div>
       <template v-slot:append>
         <div class="pa-2">
-          <v-btn block> Logout </v-btn>
+          <v-btn block class="white black--text">
+            <v-icon left>mdi-logout-variant </v-icon>
+            Logout
+          </v-btn>
         </div>
       </template>
     </v-navigation-drawer>
 
-    <!-- Na bar tools -->
+    <!-- Navbar tools -->
     <v-app-bar :clipped-left="clipped" fixed dense app color="blue accent-3">
       <v-toolbar-title v-text="title" class="white--text" />
     </v-app-bar>
