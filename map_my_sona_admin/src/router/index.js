@@ -1,15 +1,26 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-// import Home from "../views/Home.vue";
+import login from "../views/auth/login";
 import dashboard from "../views/dashboard";
 import addproduct from "../views/addproduct";
 import updatedata from "../views/updateData";
 import generateqr from "../views/generateQr";
 import reportandcontact from "../views/reportandcontact";
 
+// import defaultLayout from "../layout/default";
+
 Vue.use(VueRouter);
 
 const routes = [
+  {
+    path: "/login",
+    component: login,
+    name: "login",
+    meta: {
+      authPage: true,
+    },
+  },
+
   {
     path: "/",
     name: "dashboard",
