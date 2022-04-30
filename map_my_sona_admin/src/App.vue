@@ -1,20 +1,21 @@
 <template>
   <v-app>
-    <navbar />
-    <v-main>
-      <router-view />
-    </v-main>
+    <router-view />
   </v-app>
 </template>
 
 <script>
-import navbar from "./components/navbar.vue";
 export default {
-  components: { navbar },
   name: "App",
 
-  data: () => ({}),
+  data: () => ({
+    //
+  }),
 };
 </script>
-<style >
+
+<style scoped>
+* {
+  font-family: "Spline Sans", sans-serif;
+}
 </style>

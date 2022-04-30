@@ -65,7 +65,7 @@ main {
   display: flex;
   justify-content: space-around;
 }
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .container {
     display: flex;
     flex-direction: column;

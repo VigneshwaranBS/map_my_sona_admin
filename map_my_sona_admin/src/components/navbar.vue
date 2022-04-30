@@ -51,7 +51,7 @@
       </div>
       <template v-slot:append>
         <div class="pa-2">
-          <v-btn block class="white black--text">
+          <v-btn block class="white black--text" router to="/login">
             <v-icon left>mdi-logout-variant </v-icon>
             Logout
           </v-btn>
